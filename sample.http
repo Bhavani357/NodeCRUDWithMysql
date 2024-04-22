@@ -1,0 +1,40 @@
+
+GET http://localhost:3000/customers
+
+###
+GET http://localhost:3000/customers/2
+
+###
+PUT http://localhost:3000/customers/2
+Content-Type: application/json
+
+{
+    "name":"satya",
+    "age":27,
+    "phone":"34564738",
+    "email":"satya@gmail.com",
+    "updated_on":"2024-3-05",
+    "address_id":2,
+    "customerId":1
+
+}
+
+###
+POST http://localhost:3000/customers/
+Content-Type: application/json
+# Authorization: Bearer bad6d0be61660c1319d2c2fe3916c7c7315696a0b98408a0effa749ca16e758b
+
+{
+    "name": "ramu",
+    "age": 26,
+    "phone": "98376524",
+    "email": "ramu.g@gmail.com",
+    "created_on": "2024-03-24",
+    "updated_on": "2024-04-22",
+    "address_id": 2
+}
+
+
+### 
+DELETE http://localhost:3000/customers/2
+###
